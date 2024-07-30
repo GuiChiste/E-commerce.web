@@ -45,39 +45,60 @@ O prazo para a entrega do site é de um mês.
 
 # Critérios de aceite:
 
-Critérios de aceite
-FIGMA
+**FIGMA**
+</br>
 Mapa mental (obrigatório)
 
-GERAL
+**GERAL**
+</br>
 Produto condizente com a proposta
+</br>
 Prazo de entrega
+</br>
 Utilização do git e versionamento do código
 
-TELA DE REGISTRO:
+**TELA DE REGISTRO:**
+</br>
 Campo de inserção do e-mail (validação obrigatória)
+</br>
 Campo de inserção do Nome  (validação obrigatória)
+</br>
 Campo de inserção da senha (validação obrigatória)
+</br>
 Campo de confirmação da senha (validação obrigatória)
+</br>
 Botão de conclusão do cadastro
 
-TELA DE LOGIN:
+**TELA DE LOGIN:**
+</br>
 Campo de inserção do e-mail (validação obrigatória)
+</br>
 Campo de inserção da senha (validação obrigatória)
+</br>
 Botão de conclusão do login (funcionalidade obrigatória)
 
-LANDING PAGE:
+**LANDING PAGE:**
+</br>
 Menu de navegação
+</br>
 3 áreas de conteúdo (mínimo)
-rodapé
+</br>
+Rodapé
 
-TELA DE PRODUTOS:
-LIstagem de produtos
-menu de pesquisa (funcionalidade obrigatória)
-side bar (funcionalidade obrigatória)
-
-DASHBOARD:
-Menu de produtos com opção de saída do dasboard (funcionalidade obrigatória)
-Lista de produtos
+**TELA DE PRODUTOS:**
+</br>
+Listagem de produtos
+</br>
 Menu de pesquisa (funcionalidade obrigatória)
-Botões das operações: adicionar/criar,  Atualizar,  excluir (funcionalidade obrigatória)
+</br>
+Side bar (funcionalidade obrigatória)
+
+**DASHBOARD:**
+</br>
+Menu de produtos com opção de saída do dasboard (funcionalidade obrigatória)
+</br>
+Lista de produtos
+</br>
+Menu de pesquisa (funcionalidade obrigatória)
+</br>
+Botões das operações: Adicionar/Criar,  Atualizar e Excluir (funcionalidade obrigatória)
