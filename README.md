@@ -95,7 +95,7 @@ Side bar (funcionalidade obrigatória)
 </br>
 Menu de produtos com opção de saída do dasboard (funcionalidade obrigatória)
 </br>
-Lista de produtos
+Lista de produtos (funcionalidade obrigatória)
 </br>
 Menu de pesquisa (funcionalidade obrigatória)
 </br>
