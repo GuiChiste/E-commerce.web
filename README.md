@@ -45,9 +45,7 @@ O prazo para a entrega do site é de um mês.
 
 # Critérios de aceite:
 
-**FIGMA**
-</br>
-Mapa mental (obrigatório)
+**FIGMA (obrigatório)**
 
 **GERAL**
 </br>
