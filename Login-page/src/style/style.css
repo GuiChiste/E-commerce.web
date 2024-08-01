@@ -16,6 +16,36 @@ body{
     justify-content:center;
     flex-direction: column;
     height: 100vh;
+
+    @media (max-width: 700px) {
+        .container {
+            width: 350px;
+        }
+
+        form {
+            width: 200%;
+        }
+
+        .toggle-container {
+            display: none;
+        }
+
+        .phonelink {
+            display: unset;
+        }
+
+        .sign-in {
+            position: absolute;
+            z-index: 10;
+            opacity: 9;
+        }
+
+        .sign-up {
+            position: absolute;
+            z-index: 50;
+            opacity: 9;
+        }
+    }
 }
 
 .container{
@@ -28,6 +58,10 @@ body{
     max-width: 100%;
     min-height: 480px;
     border: solid 1px white;
+}
+
+.phonelink{
+    display: none;
 }
 
 .container p{

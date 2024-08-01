@@ -11,7 +11,7 @@
 </head>
 <body>
    <div class="container" id="container">
-        <div class="form-container sign-up">
+        <div class="form-container sign-up" id="sign-up">
             <form>
                 <h1>Criar conta</h1>
                 <div class="social-icons">
@@ -40,9 +40,10 @@
                     <label for="checkview"><i id="magicEye" class="fa fa-eye-slash"></i></label>
                 </div>
                 <button onclick="register(event)">Inscrever-se</button>
+                <a class="phonelink" id="cellviewlink2" href="#">Já tem uma conta?</a>
             </form>
         </div>
-        <div class="form-container sign-in">
+        <div class="form-container sign-in" id="sign-in">
             <form>
                 <h1>Entrar</h1>
                 <div class="social-icons">
@@ -70,12 +71,13 @@
                 </div>
                 <a href="./src/subHTML/recovery.html">Esqueceu sua senha?</a>
                 <button onclick="entrar(event)">Entrar</button>
+                <a class="phonelink" id="cellviewlink1" href="#">Não tem uma conta?</a>
             </form>
         </div>
         <div class="toggle-container">
             <div class="toggle">
                 <div class="toggle-panel toggle-left">
-                    <h1>Bem Vindo de Volta!</h1>
+                    <h1>Bem Vindo!</h1>
                     <p>Insira seus dados pessoais
                      para usar todos os recursos do site</p>
                      <p>- ou -</p>
