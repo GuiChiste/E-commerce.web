@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap');
+
 :root {
     --color01: #000000;
     --color02: #ffffff;
     --color03: #ff5555;
-    --color04: #a19c9c;
-    --fontsize01: 18px;
+    --fontsize01: 20px;
+    --fontsize02: 28px;
+    --fontsize03: 32px;
+    --fontsize04: 46px;
+    --fontsize05: 50px;
 }
 
 body {
@@ -11,11 +16,13 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0;
     background-color: var(--color01);
     color: var(--color02);
+    font-size: var(--fontsize01);
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
 }
 
 header.cabeçalho {
@@ -23,21 +30,21 @@ header.cabeçalho {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--color04);
+    background-color: var(--color02);
     width: 100%;
+    box-shadow: 0 0 50px 0 white;
 }
- li {
-    display: inline-block;
-    margin: 8px;
-    
+ header li {
+    display: inline-block;  
 }
 a {
     text-decoration: none;
+    font-size: var(--fontsize01);
 }
 
 main {
     margin-top: 30px;
-    
+    max-width: 1200px;
 }
 
 section.divisao, article.divisao {
@@ -46,29 +53,30 @@ section.divisao, article.divisao {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    font-size: 22px;
 }
 
-h1.title {
-    display: flex;
-    flex-direction: column;
-    font-size: 64px;
-    
+h1 {
+    font-size: var(--fontsize05);
+    font-weight: 900;
+    line-height: 45px;
 }
 
-.first-title, .segund-title {
-    display: block;
+h2 {
+    font-size: var(--fontsize04);
 }
 
-.three-title {
-    width: 90%;
-    font-size: 18px;
+h3 {
+    font-size: var(--fontsize02);
+}
+
+p, h4 {
+    font-size: var(--fontsize01);
 }
 
 .metade {
     flex: 1;
-    padding: 10px;
-    border: 10px;
+    padding: 15px;
+    border: 15px;
     box-sizing: border-box;
 }
 
@@ -83,45 +91,66 @@ h1.title {
 .bnt {
     padding: 10px;
     color: var(--color01);
-    border-radius: 10px;
-    font-size: 18px;
+    font-size: var(--fontsize01);
 }
 .bnt2 {
     background-color: var(--color01);
     color: var(--color02);
     padding: 10px;
-    border-radius: 10px;
-    font-size: 18px;
+    border-radius: 20px;
+    font-size: var(--fontsize01);
 }
 .bnt2:hover {
-    background-color: var(--color02);
-    color: var(--color01);
+    background-color: rgba(0, 0, 0, 0.603);
 }
 
 .bnt:hover {
-    background-color: var(--color02);
+    background-color: var(--color01);
+    color: var(--color02);
+    border-radius: 20px;
+}
+
+.bnt3 {
+    background-color: var(--color01);
+    color: var(--color02);
+    margin-top: 20px;
+    border: none;
+    padding: 10px 30px;
+    font-size: var(--fontsize01);
+    border-radius: 20px;
+}
+
+.bnt3:hover {
+    background-color: rgba(0, 0, 0, 0.603);
+    font-size: var(--fontsize01);
 }
 
 .botao {
     padding: 10px;
     color: var(--color02);
-    border-radius: 10px;
-    margin: 5px;
-    font-size: 22px;
+    border-radius: 20px;
+    margin: 0 15px;
+    font-size: var(--fontsize01);
+    font-weight: 700;
 }
-.botao:hover {
+.botao:hover, .botao02:hover {
     background-color: var(--color02);
     color: var(--color01);
 }
 
-span.videostart{
-    background-color: var(--color03);
-    padding: 3px;
+.botao02 {
+    padding: 10px;
+    color: var(--color02);
+    border-radius: 20px;
+    margin-left: 15px;
+    font-size: var(--fontsize01);
+    font-weight: 800;
 }
 
-span.feat {
+.feat {
     color: var(--color03);
-    font-size: 22px;
+    font-weight: 800;
+    font-size: var(--fontsize01);
 }
 .content {
     display: flex;
@@ -135,16 +164,15 @@ span.feat {
 
 header.test {
     text-align: center;
-    line-height: 2px;
-    font-size: 22px;
+}
+
+h2 {
+    line-height: 40px;
 }
 
 #container {
-    max-width: 800px;
     margin: 0 auto;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 5px;
 }
 
 .faq-cont {
@@ -155,15 +183,14 @@ header.test {
 .faq-item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
+    padding: 5px;
 }
 
 .faq-quest {
-    width: 48%;
-    padding: 15px;
+    width: 48.5%;
+    padding: 5px;
     background-color: var(--color02);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
 }
 
 .destaq {
@@ -179,58 +206,56 @@ header.test {
     margin-bottom: 0;
 }
 
+/* FOOTER*/
+
 footer {
-    background-color: var(--color04);
-    bottom: 0;
+    background-color: var(--color02);
+    color: var(--color01);
     width: 100%;
-    padding: 10px;
-    margin-top: 30px;
 }
 
 .container-footer {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    
+    padding: 20px;
 }
 
-footer ul li {
+.cent-foo {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.cent-foo h3 {
+    font-size: var(--fontsize03);
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.cent-foo form {
     display: flex;
     flex-direction: column;
 }
 
-.contcent {
-    text-align: center; 
+.cent-foo input[type="email"] {
+    padding: 10px 5px;
+    margin-top: 15px ;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 
-.cent { 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 30px;
+.cent-foo ul li {
+    margin-bottom: 20px;
 }
 
-footer p {
+.cent-foo ul {
+    list-style: none;
+    padding: 0;
+}
+
+hr {
+    box-shadow: 0 0 10px 0 black;
+}
+
+.copycent {
     text-align: center;
-}
-
-.bnt3 {
-    background-color: var(--color01);
-    color: var(--color02);
-    border: none;
-    padding: 10px 32px;
-    font-size: 18px;
-    border-radius: 10px;
-}
-
-#email {
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.bnt3:hover {
-    background-color: var(--color02);
-    color: var(--color01);
-    font-size: 22px;
-    font-weight: bold;
 }

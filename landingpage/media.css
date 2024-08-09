@@ -3,6 +3,14 @@
         flex-direction: row;
 
     }
+
+    header ul li {
+        margin-top: 5px;
+    }
+    
+    section.divisao, article.divisao {
+        flex-direction: column;
+    }
     
     main {
         flex-direction: column;
