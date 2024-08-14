@@ -11,32 +11,47 @@ loginBtn.addEventListener('click', () =>{
     container.classList.remove("active");
 });
 
+// animation verify for mobile
+const phoneLink1 = document.getElementById('cellviewlink1');
+const phoneLink2 = document.getElementById('cellviewlink2');
+const signin = document.getElementById('sign-in');
+const signup = document.getElementById('sign-up');
+
+phoneLink1.addEventListener('click', () => {
+    signin.style.zIndex = '5';
+    signup.style.zIndex = '10';
+})
+phoneLink2.addEventListener('click', () => {
+    signin.style.zIndex = '10';
+    signup.style.zIndex = '5';
+})
 
 // view password ▼
 const checkview2 = document.getElementById('checkview2');
 const checkview = document.getElementById('checkview');
+const pass = document.getElementById('password');
+const eye = document.getElementById('magicEye');
+const pass2 = document.getElementById('password2');
+const eye2 = document.getElementById('magicEye2');
 
-checkview2.addEventListener('change', () => {
-    const pass2 = document.getElementById('password2');
-    const eye2 = document.getElementById('magicEye2');
-
-    if (pass2.type === 'password') {
+function updateView() {
+    if (checkview2.checked) {
         pass2.type = 'text';
         eye2.className = 'fa fa-eye';
     } else {
         pass2.type = 'password';
         eye2.className = 'fa fa-eye-slash';
     }
-})
-checkview.addEventListener('change', () => {
-    const pass = document.getElementById('password');
-    const eye = document.getElementById('magicEye');
 
-    if (pass.type === 'password') {
+    if (checkview.checked) {
         pass.type = 'text';
         eye.className = 'fa fa-eye';
     } else {
         pass.type = 'password';
         eye.className = 'fa fa-eye-slash';
     }
-})
+}
+
+checkview2.addEventListener('change', updateView);
+checkview.addEventListener('change', updateView);
+updateView();
