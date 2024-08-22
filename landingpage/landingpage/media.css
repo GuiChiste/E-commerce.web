@@ -1,0 +1,39 @@
+@media screen and (max-width: 720px) {
+    header.cabeçalho{
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    ul li {
+        flex-direction: column;
+        display: flex;
+       text-align: center;
+    }
+    
+    
+    section.divisao, article.divisao {
+        flex-direction: column;
+    }
+    
+    main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    
+
+    img.del {
+        display: none;
+    }
+
+    .container-footer {
+       display: flex;
+       justify-content: space-between;
+       flex-direction: column;
+       text-align: center;
+    }
+    
+    .cent-foo ul li {
+        margin-bottom: 5px;
+    }
+}
