@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="flex items-center justify-between h-16 px-4 border-b bg-background md:px-6">
+        <div class="container-esquerda">
+            <button class="btn-content" data-target="samsung-content" id="logo-samsung">
+                <img src="./images/icons8-samsung-48.png" />
+            </button>
+            <button class="btn-content" data-target="xiaomi-content" id="logo-xiaomi">
+                <img src="./images/icons8-xiaomi-48.png">
+            </button>
+            <button class="btn-content" data-target="apple-content" id="logo-apple">
+                <img src="./images/icons8-apple-48.png">
+            </button>
+            <button class="btn-content" data-target="motorola-content" id="logo-motorola">
+                <img src="./images/icons8-motorola-48.png">
+            </button>
+        </div>
+        <div class="container-direita">
+            <button id="searchBtn"
+                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-5 h-5">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                </svg>
+            </button>
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-5 h-5">
+                    <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                    <path d="M3 6h18"></path>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="searchOverlay" class="hidden">
+            <input id="searchInput" type="text" placeholder="Pesquisar">
+            <button id="closeBtn"><i class="fas fa-times"></i>Fechar</button>
+        </div>
+
+
+    </header>
+    <main>
+        <div class="content" id="apple-content">
+            <h1 class="apple"><img id="logo-texto" src="./images/icons8-apple-70.png" /></h1>
+            <section class="product-cards">
+                <div class="card">
+                    <div class="card-details">
+                        <img class="testes" src="./images/iphone_15_pro.png" alt="iPhone 15 Pro">
+                        <h2 class="product-name">iPhone 15 Pro</h2>
+                        <p class="text-body">O Iphone definitivo.</p>
+                        <h3 class="">A partir de R$ 774,92/mês <br> ou R$ 9.299*</h3>
+                    </div>
+                    <button class="card-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <img class="testes" src="./images/iphone_15.png" alt="iPhone 15">
+                        <h2 class="product-name">iPhone 15</h2>
+                        <p class="text-body">Poderoso em tudo.</p>
+                        <h3 class="">A partir de R$ 608,25/mês <br> ou R$ 7.299*</h3>
+                    </div>
+                    <button class="card-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <img class="testes" src="./images/iphone_14.png" alt="iPhone 14">
+                        <h2 class="product-name">iPhone 14</h2>
+                        <p class="text-body">Impressionante.</p>
+                        <h3 class="">A partir de R$ 499,92/mês <br> ou R$ 5.999*</h3>
+                    </div>
+                    <button class="card-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <img class="testes" src="./images/iphone_13.png" alt="iPhone 13">
+                        <h2 class="product-name">iPhone 13</h2>
+                        <p class="text-body">Cheio de talentos.</p>
+                        <h3 class="">A partir de R$ 458,25/mês <br> ou R$ 5.499*</h3>
+                    </div>
+                    <button class="card-button">Comprar</button>
+                </div>
+        </div>
+        </section>
+        </div>
+        <div class="content" id="samsung-content">
+            <h1 class="samsung"><img src="./images/icons8-samsung-150.png" alt="Logo samsung branco"></h1>
+            <section class="product-cards">
+                <div class="card">
+                    <div class="card-details">
+                        <img src="./images/galaxy-s24-ultra.avif" alt="Galaxy S24 ultra">
+                        <h2 class="product-name">Galaxy S24 U</h2>
+                        <p class="text-body">Incrível, simples assim.</p>
+                        <h3 class="">A partir de R$ 774,92/mês <br> ou R$ 9.299*</h3>
+                    </div>
+                    <button class="card-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <img src="./images/galaxy-s24-plus.avif" alt="Galaxy S24 plus">
+                        <h2 class="product-name">Galaxy S24+</h2>
+                        <p class="text-body">Eleve o nível.</p>
+                        <h3 class="">A partir de R$ 608,25/mês <br> ou R$ 7.299*</h3>
+                    </div>
+                    <button class="card-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <img src="./images/galaxy-s24.avif" alt="Galaxy S24">
+                        <h2 class="product-name">Galaxy S24</h2>
+                        <p class="text-body">O novo padrão.</p>
+                        <h3 class="">A partir de R$ 499,92/mês <br> ou R$ 5.999*</h3>
+                    </div>
+                    <button class="card-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <img src="./images/galaxy-s23.avif" alt="Galaxy S23">
+                        <h2 class="product-name">Galaxy S23</h2>
+                        <p class="text-body">Projetado para você.</p>
+                        <h3 class="">A partir de R$ 458,25/mês <br> ou R$ 5.499*</h3>
+                    </div>
+                    <button class="card-button">Comprar</button>
+                </div>
+        </div>
+        </section>
+        </div>
+        <div class="content" id="xiaomi-content">
+            <h1 class="xiaomi"><img src="./images/icons8-xiaomi-70.png" alt=""></h1>
+            <section class="product-cards">
+                <div class="card">
+                    <div class="card-details">
+                        <img src="./images/xiaomi-13.png" alt="Xiaomi 12">
+                        <h2 class="product-name">Xiaomi 13</h2>
+                        <p class="text-body">Estilo e Liberdade.</p>
+                        <h3 class="">A partir de R$ 774,92/mês <br> ou R$ 9.299*</h3>
+                    </div>
+                    <button class="card-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <img src="./images/xiaomi-12.webp" alt="Xiaomi 12 lite">
+                        <h2 class="product-name">Xiaomi 12 </h2>
+                        <p class="text-body">Domine cada cena.</p>
+                        <h3 class="">A partir de R$ 608,25/mês <br> ou R$ 7.299*</h3>
+                    </div>
+                    <button class="card-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <img src="./images/xiaomi-12-lite.webp" alt="Xiaomi 11 ">
+                        <h2 class="product-name">Xiaomi 12 Lite</h2>
+                        <p class="text-body">Elegante e discreto.</p>
+                        <h3 class="">A partir de R$ 499,92/mês <br> ou R$ 5.999*</h3>
+                    </div>
+                    <button class="card-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <img src="./images/xiaomi-11-lite.webp" alt="Xiaomi 11 lite">
+                        <h2 class="product-name">Xiaomi 11 Lite</h2>
+                        <p class="text-body">Cenas icônicas.</p>
+                        <h3 class="">A partir de R$ 458,25/mês <br> ou R$ 5.499*</h3>
+                    </div>
+                    <button class="card-button">Comprar</button>
+                </div>
+        </div>
+        </section>
+        </div>
+        <div class="content" id="motorola-content">
+            <h1 class="motorola"><img src="./images/icons8-motorola-70.png" alt=""></h1>
+            <section class="product-cards">
+                <div class="card">
+                    <div class="card-details">
+                        <img src="./images/motorola_edge_50_ultra.png" alt="Motorola Edge 50 Ultra">
+                        <h2 class="product-name">Edge 50 Ultra</h2>
+                        <p class="text-body">Design refinado.</p>
+                        <h3 class="">A partir de R$ 499,91/mês <br> ou R$ 5.399*</h3>
+                    </div>
+                    <button class="card-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <img src="./images/motorola-edge-50-pro.png" alt="Xiaomi 12 lite">
+                        <h2 class="product-name">Edge 50 Pro</h2>
+                        <p class="text-body">Minuciosamente feito.</p>
+                        <h3 class="">A partir de R$ 291,58/mês <br> ou R$ 3.149*</h3>
+                    </div>
+                    <button class="card-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <img src="./images/motorola-edge-50-fusion.png" alt="Xiaomi 11 ">
+                        <h2 class="product-name">Edge 50 fusion</h2>
+                        <p class="text-body">Profissional e inteligente.</p>
+                        <h3 class="">A partir de R$ 249,91/mês <br> ou R$ 2.699*</h3>
+                    </div>
+                    <button class="card-button">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <img src="./images/motorola-edge-40-neo.png" alt="Xiaomi 11 lite">
+                        <h2 class="product-name">Edge 40 Neo</h2>
+                        <p class="text-body">Perfeita harmonia.</p>
+                        <h3 class="">A partir de R$ 174,91/mês <br> ou R$ 1.889*</h3>
+                    </div>
+                    <button class="card-button">Comprar</button>
+                </div>
+        </div>
+        </section>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
