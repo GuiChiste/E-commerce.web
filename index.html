@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="openAside">
+            <input type="checkbox" name="" id="openInputCheck">
+            <label for="openInputCheck"><i class="fa fa-bars" id="openAsideBar"></i></label>
+        </div>
+        <aside class="sidebar">
+            <div>
+                <div class="logo">Logo do projeto</div>
+                <nav>
+                    <a href="#">Produto</a>
+                </nav>
+                <button class="exit-button">Sair</button>
+            </div>
+        </aside>
+        <div class="asideblur"></div>
+        <main class="main-content">
+            <div>
+                <header>
+                    <h1>Produtos</h1>
+                </header>
+                <section>
+                    <form>
+                        <input type="search" class="search" placeholder="Pesquisar produto" onkeyup="searchProduct()">
+                    </form>
+                </section>
+                <section id="product-list">
+                </section>
+            </div>
+            <div>
+                <footer class="actions">
+                    <button class="add-button" onclick="addButton()">Adicionar</button>
+                    <button class="update-button" onclick="editar()">Atualizar</button>
+                    <button class="delete-button" onclick="excluir()">Excluir</button>
+                </footer>
+            </div>
+        </main>
+    </div>
+    <div id="add-product-continer">
+        <div class="add-product">
+            <div id="add-close">
+                <i class="fa fa-close"></i>
+            </div>
+            <h1 id="addtitle">Adicionar Produto</h1>
+            <form id="productForm">
+                <input type="text" id="productName" placeholder="Nome do Produto" />
+                <input type="text" id="productPhrase" placeholder="Frase de efeito" maxlength="27">
+                <input type="number" id="productPrice" placeholder="Preço" />
+                <input type="url" id="productImage" placeholder="Link da imagem">
+                <button type="button" id="addProductButton" onclick="addProduct()">Add</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+<script src="maintwo.js"></script>
+</html>
