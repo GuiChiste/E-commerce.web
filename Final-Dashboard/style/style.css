@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    position: relative;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    background-color: #000000;
+    color: #fff;
+    overflow: hidden;
+
+    @media (max-width: 1000px) {
+        .product-card {
+            margin: 7px;
+        }
+        .main-content {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+#openInputCheck {
+    display: none;
+}
+
+#openAsideBar {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+
+    &:hover {
+        color: aqua;
+        transition: 0.1s ease;
+    }
+}
+
+.sidebar {
+    position: absolute;
+    z-index: 50;
+    width: 200px;
+    border-right: solid 1px white;
+    height: 120%;
+    background-color: #2e2e2e;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.asideblur {
+    display: none;
+    position: absolute;
+    z-index:25;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+}
+
+.logo {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+nav{
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+nav a {
+    display: inline-block;
+    width: 80%;
+    background-color: #141414;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+
+.exit-button {
+    position: absolute;
+    background-color: #800000;
+    width: 75%;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 22px;
+    bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #000000;
+}
+
+header h1 {
+    font-size: 54px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 22px;
+}
+
+#product-list {
+    border: solid 1px white;
+    width: 100%;
+    height: 450px;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.actions {
+    margin-top: auto;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+}
+
+.add-button {
+    background-color: #008000;
+    color: white;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.update-button {
+    background-color: #000080;
+    color: white;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.delete-button {
+    background-color: #800000;
+    color: white;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#add-product-continer {
+    display: none;
+    backdrop-filter: blur(3px);
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    position: absolute;
+}
+
+.add-product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    border: solid 1px white;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        width: 300px;
+        height: 35px;
+        border-radius: 10px;
+        background-color: blue;
+        border: none;
+    }
+}
+
+#productForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    justify-content: space-between;
+
+    input {
+        width: 300px;
+        height: 35px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+}
+
+.product-card{
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 390px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+
+    h1, h2, h3 {
+        margin: 0;
+    }
+}
+
+.product-del {
+    position: absolute;
+    top: 0;
+    display: none;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    align-items: center;
+}
+
+.delThisProduct {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: red;
+    margin-left: 27px;
+    cursor: pointer;
+}
+
+.product-edit {
+    position: absolute;
+    top: 0;
+    display: none;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    align-items: center;
+}
+
+.editThisProduct {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: blue;
+    margin-left: 27px;
+    cursor: pointer;
+}
+
+#add-close {
+    position: absolute;
+    display: flex;
+    align-items: end;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 0;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.buttonMore {
+    width: 90px;
+    height: 35px;
+    margin-right: 20px;
+    background-color: rgb(32, 32, 255);
+    border: none;
+    border-radius: 17px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#product-image {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#product-info {
+    position: absolute;
+    bottom: 10px;
+}
+
+#phrase {
+    color: lightgray;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
