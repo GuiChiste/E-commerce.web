@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sriracha&display=swap');
+
+:root {
+    --color01: #000000;
+    --color02: #ffffff;
+    --color03: #ff5555;
+    --fontsize01: 20px;
+    --fontsize02: 28px;
+    --fontsize03: 32px;
+    --fontsize04: 46px;
+    --fontsize05: 50px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    background-color: var(--color01);
+    color: var(--color02);
+    font-size: var(--fontsize01);
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+header.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color02);
+    width: 100%;
+    box-shadow: 0 0 50px 0 white;
+}
+ header li {
+    display: inline-block;  
+}
+a {
+    text-decoration: none;
+    font-size: var(--fontsize01);
+}
+
+main {
+    margin-top: 30px;
+    max-width: 1200px;
+}
+
+section.divisao, article.divisao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: var(--fontsize05);
+    font-weight: 900;
+    line-height: 45px;
+}
+
+h2 {
+    font-size: var(--fontsize04);
+}
+
+h3 {
+    font-size: var(--fontsize02);
+}
+
+p, h4 {
+    font-size: var(--fontsize01);
+}
+
+.metade {
+    flex: 1;
+    padding: 15px;
+    border: 15px;
+    box-sizing: border-box;
+}
+
+.segund {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.bnt {
+    padding: 10px;
+    color: var(--color01);
+    font-size: var(--fontsize01);
+}
+.bnt2 {
+    background-color: var(--color01);
+    color: var(--color02);
+    padding: 10px;
+    border-radius: 20px;
+    font-size: var(--fontsize01);
+}
+.bnt2:hover {
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+.bnt:hover {
+    background-color: var(--color01);
+    color: var(--color02);
+    border-radius: 20px;
+}
+
+.bnt3 {
+    background-color: var(--color01);
+    color: var(--color02);
+    margin-top: 20px;
+    border: none;
+    padding: 10px 30px;
+    font-size: var(--fontsize01);
+    border-radius: 20px;
+}
+
+.bnt3:hover {
+    background-color: rgba(0, 0, 0, 0.603);
+    font-size: var(--fontsize01);
+}
+
+.botao {
+    padding: 10px;
+    color: var(--color02);
+    border-radius: 20px;
+    margin: 0 15px;
+    font-size: var(--fontsize01);
+    font-weight: 700;
+}
+.botao:hover, .botao02:hover {
+    background-color: var(--color02);
+    color: var(--color01);
+}
+
+.botao02 {
+    padding: 10px;
+    color: var(--color02);
+    border-radius: 20px;
+    margin-left: 15px;
+    font-size: var(--fontsize01);
+    font-weight: 800;
+}
+
+.feat {
+    color: var(--color03);
+    font-weight: 800;
+    font-size: var(--fontsize01);
+}
+.content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.content img {
+    display: inline-block;
+}
+
+header.test {
+    text-align: center;
+}
+
+h2 {
+    line-height: 40px;
+}
+
+#container {
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.faq-cont {
+   margin-top: 20px;
+   color: var(--color01);
+}
+
+.faq-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.faq-quest {
+    width: 48.5%;
+    padding: 5px;
+    background-color: var(--color02);
+    border-radius: 20px;
+}
+
+.destaq {
+    background-color: var(--color03);
+    color: var(--color02);
+}
+
+.faq-quest h3 {
+    margin-top: 0;
+}
+
+.faq-quest p {
+    margin-bottom: 0;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: var(--color02);
+    color: var(--color01);
+    width: 100%;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cent-foo {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.cent-foo h3 {
+    font-size: var(--fontsize03);
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.cent-foo form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cent-foo input[type="email"] {
+    padding: 10px 5px;
+    margin-top: 15px ;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.cent-foo ul li {
+    margin-bottom: 20px;
+}
+
+.cent-foo ul {
+    list-style: none;
+    padding: 0;
+}
+
+hr {
+    box-shadow: 0 0 10px 0 black;
+}
+
+.copycent {
+    text-align: center;
+}
