@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="icon" href="icon/icon.svg" type="image/x-icon">
+    <title>Pagina de Login Moderna</title>
+</head>
+<body>
+   <div class="container" id="container">
+        <div class="form-container sign-up" id="sign-up">
+            <form>
+                <h1>Criar conta</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                <span> ou use seu e-mail para cadastro </span>
+                <input type="text" 
+                placeholder="Name" id="name">
+                <input type="email" 
+                placeholder="Email" maxlength="50" id="email">
+                <div class="pass">
+                    <input type="password" 
+                    placeholder="Password" id="password" class="password" maxlength="18">
+                    <input type="checkbox" name="" id="checkview">
+                    <label for="checkview"><i id="magicEye" class="fa fa-eye-slash"></i></label>
+                </div>
+                <button onclick="register(event)">Inscrever-se</button>
+                <a class="phonelink" id="cellviewlink2" href="#">Já tem uma conta?</a>
+            </form>
+        </div>
+        <div class="form-container sign-in" id="sign-in">
+            <form>
+                <h1>Entrar</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                <span> ou use sua senha de e-mail </span>
+                <input type="email" 
+                placeholder="Usuario ou Email" id="user">
+                <div class="pass2">
+                    <input type="password" 
+                    placeholder="Password" id="password2">
+                    <input type="checkbox" id="checkview2">
+                    <label for="checkview2"><i id="magicEye2" class="fa fa-eye-slash"></i></label>
+                </div>
+                <a href="./src/subHTML/recovery.html">Esqueceu sua senha?</a>
+                <button onclick="entrar(event)">Entrar</button>
+                <a class="phonelink" id="cellviewlink1" href="#">Não tem uma conta?</a>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bem Vindo!</h1>
+                    <p>Insira seus dados pessoais
+                     para usar todos os recursos do site</p>
+                     <p>- ou -</p>
+                    <button class="hidden" id="login">Entrar</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Olá, Amigo!</h1>
+                    <p>Faça login usando seus dados
+                     para ter acesso a todos os recursos do site</p>
+                     <p>- ou -</p>
+                    <button class="hidden" id="register">Criar conta</button>
+                </div>
+            </div>
+        </div>
+   </div>
+</body>
+<script src="./src/script/script.js"></script>
+<script src="./src/script/connection.js"></script>
+</html>
